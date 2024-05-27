@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Registrarse</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="../css/styles.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="d-flex align-items-center py-4 bg-body-tertiary">
+    <main class="w-100 m-auto d-flex justify-content-center">
+      <div
+        class="card"
+        style="width: 40%; padding: 2rem"
+      >
+        <div class="card-body">
+          <form
+            id="registerForm"
+            class="needs-validation"
+            novalidate
+          >
+            <i class="bi bi-person-plus register-icon"></i>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="First Name"
+                    required
+                    maxlength="50"
+                  />
+                  <label for="firstName">Nombres</label>
+                  <div class="invalid-feedback">
+                    Ingrese sus nombres (max 50 caracteres).
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Last Name"
+                    required
+                    maxlength="50"
+                  />
+                  <label for="lastName">Apellidos</label>
+                  <div class="invalid-feedback">
+                    Ingrese sus apellido (max 50 caracteres).
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="name@example.com"
+                required
+              />
+              <label for="email">Correo electrónico</label>
+              <div class="invalid-feedback">
+                Por favor ingrese la dirección de correo correspondiente
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Password"
+                required
+              />
+              <label for="password">Contraseña</label>
+              <div class="invalid-feedback">
+                Recuerda que la contraseña debe tener por lo menos 8 caracteres, una mayuscula, un número y un simbolo.
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassword"
+                placeholder="Confirm Password"
+                required
+              />
+              <label for="confirmPassword">Confirmar contraseña</label>
+              <div class="invalid-feedback">Las contraseñas no coinciden.</div>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="favoriteColor"
+                placeholder="Favorite Color"
+                required
+                maxlength="100"
+              />
+              <label for="favoriteColor">Color favorito</label>
+              <div class="invalid-feedback">
+                Ingresa tu color favorito (como máximo 100 caracteres).
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="favoriteSong"
+                placeholder="Favorite Song"
+                required
+                maxlength="100"
+              />
+              <label for="favoriteSong">Canción favorita</label>
+              <div class="invalid-feedback">
+                Ingresa tu canción favorita (como máximo 100 caracteres).
+              </div>
+            </div>
+            <div id="registerError"></div>
+            <p class="my-3">
+              Si tienes una cuenta?
+              <a href="../index.html">Inicia sesion aquí</a>
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button
+                class="btn btn-outline-primary w-25 py-2"
+                type="submit"
+              >
+                Registrarse
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/register.js"></script>
+  </body>
+</html>
